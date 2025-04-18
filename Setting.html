@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Settings</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+    <a class="navbar-brand" href="#">Blogen</a>
+<div class="collapse navbar-collapse">
+  <ul class="navbar-nav me-auto">
+    <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+    <li class="nav-item"><a class="nav-link" href="posts.html">Posts</a></li>
+    <li class="nav-item"><a class="nav-link" active href="category.html">Categories</a></li>
+    <li class="nav-item"><a class="nav-link" href="users.html">Users</a></li>
+  </ul>
+  <div class="dropdown">
+    <a href="#" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      Welcome Brad
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end">
+      <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+      <li><a class="dropdown-item" href="Setting.html">Settings</a></li>
+    </ul>
+  </div>
+  <a href="signup.html" class="btn btn-outline-light btn-sm ms-2">Logout</a>
+</div>
+</nav>
+
+<!-- As a heading -->
+<nav class="navbar navbar-dark bg-warning">
+    <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">🕸 Add Post</span>
+    </div>
+</nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <!-- عنوان الصفحة -->
+                <h1 class="text-center mb-4">Edit Settings</h1>
+                
+                <a href="dashboard.html" class="btn btn-secondary"><i class="bi bi-arrow-left"></i> Back To Dashboard</a>
+                <!-- نموذج الإعدادات -->
+                <form>
+                    <!-- قسم السماح بتسجيل المستخدمين -->
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Allow User Registration:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="userRegistration" id="allowYes" checked>
+                            <label class="form-check-label" for="allowYes">
+                                Yes
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="userRegistration" id="allowNo">
+                            <label class="form-check-label" for="allowNo">
+                                No
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- قسم تنسيق الصفحة الرئيسية -->
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Homepage Format:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="homepageFormat" id="blogPage" checked>
+                            <label class="form-check-label" for="blogPage">
+                                Blog Page
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="homepageFormat" id="homePage">
+                            <label class="form-check-label" for="homePage">
+                                Homepage
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- الأزرار -->
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                        <button type="submit" class="btn btn-success">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

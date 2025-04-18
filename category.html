@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btns {
+            display: flex;
+            padding-left: 20rem;
+            /* justify-content: space-between; */
+            gap: 50px;
+        }
+        @media (max-width: 575.98px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .btns {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .btns {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <!-- As a link -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+        <a class="navbar-brand" href="#">Blogen</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="posts.html">Posts</a></li>
+                <li class="nav-item"><a class="nav-link" active href="category.html">Categories</a></li>
+                <li class="nav-item"><a class="nav-link" href="users.html">Users</a></li>
+            </ul>
+            <div class="dropdown">
+                <a href="#" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Welcome Brad
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                    <li><a class="dropdown-item" href="Setting.html">Settings</a></li>
+                </ul>
+            </div>
+            <a href="signup.html" class="btn btn-outline-light btn-sm ms-2">Logout</a>
+        </div>
+    </nav>
+
+    <!-- As a heading -->
+    <nav class="navbar navbar-dark bg-success">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">📁 Category</span>
+        </div>
+    </nav>
+
+
+
+    <!-- Search Btn -->
+    <div class="container mt-5">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Enter search term..." aria-label="Search Input">
+            <button class="btn btn-primary " type="button">Search</button>
+        </div>
+    </div>
+
+
+
+    <!-- TABLE POSTS -->
+    <div class="container">
+        <div class="table">
+            <table class="table table-striped table-hover ">
+                <tr>
+                    <th>Latest Posts</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Date</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Post One</td>
+                    <td>May 10 2018</td>
+                    <td><button class="btn-light bg-dark">⏩Detalis</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Post Two</td>
+                    <td>May 10 2018</td>
+                    <td><button class="btn-light bg-dark">⏩Detalis</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Post Three</td>
+                    <td>May 10 2018</td>
+                    <td><button class="btn-light bg-dark">⏩Detalis</button></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Post Four</td>
+                    <td>May 10 2018</td>
+                    <td><button class="btn-light bg-dark">⏩Detalis</button></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Post Five</td>
+                    <td>May 10 2018</td>
+                    <td><button class="btn-light bg-dark">⏩Detalis</button></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Post Six</td>
+                    <td>May 10 2018</td>
+                    <td><button class="btn-light bg-dark">⏩Detalis</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
